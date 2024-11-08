@@ -1,6 +1,16 @@
 #include <iostream>
 #include <vector>
 
+/* 
+2개의 sorted linked list(non-decreasing order)가 존재할 때, 두 list를 merge하는 문제
+linked list의 head를 return 해야 함
+
+ex. 
+list1 : [1, 2, 4]
+list2 : [1, 3, 4]
+output : [1, 1, 2, 3, 4, 4]
+*/
+
 // Definition for singly-linked list.
 struct ListNode {
     int val;
