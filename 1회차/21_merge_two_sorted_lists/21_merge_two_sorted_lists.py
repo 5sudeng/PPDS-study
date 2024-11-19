@@ -74,3 +74,19 @@ class Solution2(object):
             prev.next=list2
         return head
         
+class Solution3(object): ## 재귀적으로 푸는 방법 추가
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # 기본 케이스: 하나의 리스트가 비어 있으면 다른 리스트 반환
+        if not list1:
+            return list2
+        if not list2:
+            return list1
+        
+        # 재귀적으로 두 리스트를 합병
+        if list1.val < list2.val:
+            list1.next = self.mergeTwoLists(list1.next, list2)
+            return list1
+        else:
+            list2.next = self.mergeTwoLists(list1, list2.next)
+            return list2
+
