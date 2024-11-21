@@ -3,7 +3,12 @@
     "__bit_reference": "c",
     "__split_buffer": "c",
     "string": "c",
-    "vector": "c"
+    "vector": "c",
+    "limits": "cpp",
+    "semaphore": "cpp",
+    "algorithm": "cpp",
+    "chrono": "cpp",
+    "random": "cpp"
   },
   "files.exclude": {
     "**/*.rpyc": true,
