@@ -1,6 +1,5 @@
 #include <iostream>
 #include <queue>
-#include <map>
 
 using namespace std;
 
@@ -51,4 +50,7 @@ public:
         
         return true;
     }
+
+    // 3. map으로도 할 수 있다고 한다 ~
+
 };
