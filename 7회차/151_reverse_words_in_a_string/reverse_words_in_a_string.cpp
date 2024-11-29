@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+public: //"The sky is blue" -> "blue is sky The"
     string reverseWords(string s) {
         string result = "", tmp = "";
         for (int i = s.size() - 1; i >= 0; --i) { //뒤에서 부터 순회
